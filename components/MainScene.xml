@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+    <interface>
+        <!-- URL da página que o servidor de tradução vai buscar e converter -->
+        <field id="pageUrl" type="string" alwaysNotify="true" onChange="onPageUrlChange" />
+    </interface>
+
+    <children>
+        <Rectangle id="background" color="0x000000FF" width="1280" height="720" />
+        <Group id="root" />
+    </children>
+
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+</component>
